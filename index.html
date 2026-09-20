@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Q1 ICT Project</title>
+
+</head>
+<body>
+
+        <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-links">
+            <a href="sku.html">SKU Generator</a>
+            <a href="index.html" class="active">Receipt Generator</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+            <h1>Welcome to Cafe Fran ☕</h1>
+
+            <fieldset>
+                <legend>Order Here</legend>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item1" value="125">
+                    <label for="item1">Matcha Ichigo</label>
+                    <span>₱125</span>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item2" value="110">
+                    <label for="item2">Dark Matcha</label>
+                    <span>₱110</span>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item3" value="145">
+                    <label for="item3">Cold Strawberry Yuzu</label>
+                    <span>₱145</span>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item4" value="135">
+                    <label for="item4">Mint Peppermint Chocolate</label>
+                    <span>₱135</span>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item5" value="130">
+                    <label for="item5">White Caramel Frappucino</label>
+                    <span>₱130</span>
+                </div>
+
+                <button type="button" py-click="create_order">
+                    Create Order
+                </button>
+
+            </fieldset>
+
+            <section class="receipt">
+                <h2>Receipt</h2>
+
+                <div id="show"></div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
